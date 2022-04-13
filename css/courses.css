@@ -1,0 +1,37 @@
+.courses-page .courses__container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.course__price {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.courses-page .course__more-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 16px;
+    color: var(--font-color);
+    line-height: 20px;
+}
+
+.courses-page .course__more-info i {
+    font-size: 20px;
+    line-height: 20px;
+    transform: translateY(4px);
+}
+
+.courses-page {
+    padding-bottom: 6rem;
+}
+
+.course__details {
+    background: #fff;
+    border-radius: var(--border-radius-full);
+} 

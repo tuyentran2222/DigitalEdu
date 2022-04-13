@@ -1,0 +1,30 @@
+.pagination__wrapper {
+    margin-top: 3rem;
+}
+
+.pagination__container {
+    display: flex;
+    align-items: center;
+    gap: .5rem
+}
+
+.pagination__container li span,
+.pagination__container li a {
+    display: block;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border: 1px solid var(--border-color-light);
+    padding: 12px 18px;
+    border-radius: 55px;
+    font-weight: 600;
+}
+
+.pagination__number i {
+    font-size: 20px;
+    transform: translateY(4px);
+}
+
+.pagination__number.current {
+    background: var(--primary-color);
+    color: #fff;
+}

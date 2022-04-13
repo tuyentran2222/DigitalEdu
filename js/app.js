@@ -5,6 +5,21 @@ const footerElement = document.getElementById('footer');
 headerElement.innerHTML = header;
 footerElement.innerHTML = footer;
 
+const closeVideoBtn = document.getElementById('close-video');
+const overlayVideo = document.getElementById('overlay');
+const videoPlayIcon = document.querySelector('.video__play-icon');
+console.log(videoPlayIcon)
+if (videoPlayIcon) {
+    videoPlayIcon.addEventListener('click', ()=> {
+        overlayVideo.classList.add('show-overlay')
+    })
+}
+
+if (closeVideoBtn) {
+    closeVideoBtn.addEventListener('click', () => {
+        overlayVideo.classList.remove('show-overlay');
+    })
+}
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {

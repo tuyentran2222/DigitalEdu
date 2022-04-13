@@ -16,7 +16,7 @@
 </head>
 <body>
     <!------------------------------HEADER-------------------->
-    <header class="header fixed-top" id="header">
+    <header class="header fixed-top" id="header">   
         
     </header>
 
@@ -431,16 +431,26 @@
         <div class="container video__container pt-3 pb-3">
             <div class="video__item pt-3 pb-3">
                 <div class="video__play">
-                    <a href="#small-dialog">
-                        <span class="video__play-icon">
+                    <div>
+                         <span class="video__play-icon">
                             <span class='bx bx-play' ></span>
                         </span>
-                    </a>
-                    <div id="small-dialog"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="overlay__container" id="overlay">
+        <div class="overlay__video " style="position: relative;">
+            <button id="close-video"><i class='bx bx-x'></i></button>
+            <video width="500" height="500" controls autoplay>
+                <source src="./assets/images/video1.mp4" type="video/mp4" auto>
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+        </div>
+    </div>
 
     <div class="posts pb-3 pt-3 content-1">
         <div class="container pb-3 pt-3 posts-container">

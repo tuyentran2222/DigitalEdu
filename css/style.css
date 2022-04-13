@@ -1395,21 +1395,23 @@ h3.welcome__title {
         grid-area: h4;
     }
 }
+@media screen and (max-width: 475px) {
+    .achievements {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .welcome__buttons a:nth-child(2)  {
+        margin-right: 0.5rem;
+        margin-top: 1rem;
+    }
+}
 
 /* For small devices */
 @media screen and (max-width: 320px) {
     .options__container .option__item {
         grid-template-columns: 1fr;
         row-gap: 1.5rem;
-    }
-
-    .achievements {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-    }
-    .welcome__buttons a:nth-child(2)  {
-        margin-right: 0.5rem;
-        margin-top: 1rem;
     }
 
     .copy__policy {

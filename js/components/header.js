@@ -32,13 +32,13 @@ const header = `
                     <div class="nav__expand">
                         <ul class="expand__list">
                             <li class="expand__item">
-                                <a href="#" class="expand__link">Blog post</a>
+                                <a href="blogs.html" class="expand__link">Blog post</a>
                             </li>
                             <li class="expand__item">
-                                <a href="#" class="expand__link">Blog single</a>
+                                <a href="blog.html" class="expand__link">Blog single</a>
                             </li>
                             <li class="expand__item">
-                                <a href="#" class="expand__link">404</a>
+                                <a href="error.html" class="expand__link">404</a>
                             </li>
                             <li class="expand__item">
                                 <a href="#" class="expand__link">Landing page</a>
@@ -47,7 +47,7 @@ const header = `
                     </div>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Contact</a>
+                    <a href="contact.html" class="nav__link">Contact</a>
                 </li>
             </ul>
 

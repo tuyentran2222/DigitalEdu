@@ -5,7 +5,8 @@
 .pagination__container {
     display: flex;
     align-items: center;
-    gap: .5rem
+    gap: .5rem;
+    flex-wrap: wrap;
 }
 
 .pagination__container li span,

@@ -1,5 +1,5 @@
 .courses-page .courses__container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     padding-top: 6rem;
     padding-bottom: 3rem;
     gap: 4rem;
@@ -33,5 +33,34 @@
 
 .course__details {
     background: #fff;
-    border-radius: var(--border-radius-full);
+    border-bottom-left-radius: var(--border-radius-full);
+    border-bottom-right-radius: var(--border-radius-full);
 } 
+
+
+@media screen and (max-width: 992px) {
+    .lastest-posts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    .btn__readmore-container div {
+        margin-top: 1.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 767px) {
+    .lastest-posts {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+   
+}
+
+/* For small devices */
+@media screen and (max-width: 320px) {
+
+}

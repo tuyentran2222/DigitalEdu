@@ -1,3 +1,10 @@
+import header from "./components/header.js";
+import footer from "./components/footer.js";
+const headerElement = document.getElementById('header');
+const footerElement = document.getElementById('footer');
+headerElement.innerHTML = header;
+footerElement.innerHTML = footer;
+
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
@@ -10,9 +17,12 @@ window.addEventListener('scroll', scrollHeader);
 var homeSwiper = new Swiper('.home-swiper', {
     // Optional parameters
     loop: true,
-    // autoplay: {
-    //     delay: 5000,
-    // },
+
+    //auto play slide
+    autoplay: {
+        delay: 5000,
+    },
+    
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -40,12 +50,49 @@ window.addEventListener('click', (e) => {
     }
 })
 
-var swiper = new Swiper(".people-comment", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-});
+var swiper;
+if (window.innerWidth >=1000) {
+    swiper = new Swiper(".people-comment", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
+}
+else {
+    var swiper = new Swiper(".people-comment", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+    });
+}
 
+
+window.addEventListener('resize', ()=> {
+    if (window.innerWidth < 1000){
+
+        swiper = new Swiper(".people-comment", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+    }
+    else {
+        swiper = new Swiper(".people-comment", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+    }
+})

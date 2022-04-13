@@ -16,3 +16,10 @@
     line-height: 28px;
     color: var(--font-color);
 }
+/* For medium devices */
+@media screen and (max-width: 767px) {
+    .error-page {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}

@@ -2,7 +2,7 @@ import header from "./components/header.js";
 import footer from "./components/footer.js";
 const headerElement = document.getElementById('header');
 const footerElement = document.getElementById('footer');
-// headerElement.innerHTML = header;
+headerElement.innerHTML = header;
 footerElement.innerHTML = footer;
 
 const closeVideoBtn = document.getElementById('close-video');

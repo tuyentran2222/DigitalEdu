@@ -52,15 +52,15 @@ const header = `
             </ul>
 
         </div>
-        <div class="header__theme">
-            <div class="theme__container">
-                <i class='bx bx-moon moon__icon' ></i>
-            </div>
-            <div class="menu__icon">
-                <i class='bx bx-menu'></i>
-            </div>
-        </div>
         
+    </div>
+    <div class="header__theme">
+        <div class="theme__container">
+            <i class='bx bx-moon moon__icon' ></i>
+        </div>
+        <div class="menu__icon">
+            <i class='bx bx-menu'></i>
+        </div>
     </div>
 </div>`;
 
